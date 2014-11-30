@@ -3,16 +3,9 @@ ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
 ZSH_THEME="perryaj"
-#ZSH_THEME="random"
 
 # Virtualenv Wrapper stuff
-#PATH=/usr/local/Cellar/python/2.7.6:$PATH
-#export path
-
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python/2.7.8/bin/python
@@ -56,7 +49,7 @@ alias chopen="open -a chromium"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mercurial python rails ruby java)
+plugins=(git mercurial python rails ruby java common-aliases)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,4 +80,4 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 # usage example: syspip install pypackage
 syspip(){
        PIP_REQUIRE_VIRTUALENV="" pip "$@"
-   }
+}
