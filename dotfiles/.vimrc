@@ -102,3 +102,5 @@ EOF
 " give vim-airline access to powerline symbols
 let g:airline_powerline_fonts = 1
 
+" gradle syntax highlighting
+au BufNewFile,BufRead *.gradle set filetype=groovy
